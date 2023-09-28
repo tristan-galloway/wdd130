@@ -1,0 +1,25 @@
+body {
+    background-color:papayawhip;
+}
+
+nav {
+    display: flex
+}
+/* target "id" with "#". Target "class" with "." */
+#primary {
+    margin: 0 auto;
+}
+
+a {
+    background-color: lightblue;
+    /* color refers to the text color */
+    color: brown;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+
+}
+
+.background {
+    background-color: rgb(176, 129, 129);
+}
