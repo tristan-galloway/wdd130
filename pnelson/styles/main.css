@@ -1,0 +1,33 @@
+header {
+    color: white;
+    text-align: center;
+}
+
+.edu:hover {
+    color: black;
+}
+
+body {
+    background-color: rgb(252,166,201);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main p {
+    color: white;
+    font-size: 2em;
+}
+
+li {
+    font-style: bold;
+}
+
