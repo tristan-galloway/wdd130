@@ -1,33 +1,62 @@
 header {
     color: white;
     text-align: center;
+    font-size: 1.25em;
 }
 
-.edu:hover {
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1:hover {
     color: black;
 }
 
 body {
     background-color: rgb(252,166,201);
+    text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+}
+
+header p {
+    text-align: center;
+    width: 400px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
 }
 
 main {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
 main p {
     color: white;
     font-size: 2em;
+    text-align: center;
 }
 
 li {
-    font-style: bold;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    line-height: 175%;
+}
+
+.quote {
+    max-width: 275px;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    line-height: 10%;
+    font-family: 'Roboto', sans-serif;
 }
 
