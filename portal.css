@@ -1,5 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@400;700&family=Signika&display=swap');
+
 body {
     background-color:papayawhip;
+    font-family: Roboto, sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 nav {
@@ -10,18 +16,14 @@ nav {
     margin: 0 auto;
 }
 
-h1 {
-    font-size: 3em;
-}
-
 a {
     background-color: lightblue;
     /* color refers to the text color */
     color: brown;
     text-decoration: none;
     padding: 10px;
-    margin: 5px;
-
+    margin: 5px auto;
+    display: block;
 }
 
 a.hover {
@@ -29,10 +31,26 @@ a.hover {
     color: white;
 }
 
+h1 {
+    display: block;
+    font-size: 3em;
+    margin: 20px;
+    text-align: center;
+}
+
+
 img {
     width: 90%;
-    display: block;
+    box-sizing: border-box;
+    margin: 5px auto;
     width: 0 auto;
+}
+
+p {
+    width: 70%;
+    box-sizing: border-box;
+    margin: 20px;
+    text-align: center; 
 }
 
 .background {
