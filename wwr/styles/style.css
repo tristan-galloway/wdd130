@@ -90,6 +90,10 @@ footer a {
     text-decoration: none;
 }
 
+.icon {
+    width: 80px;
+}
+
 footer a:hover{
     color: #19c899;
 }
