@@ -124,7 +124,7 @@ h2 {
     margin: 0;
 }
 
-.card-img {
+.card-img, .equipment-img-cards{
     border: 10px solid #285d7b;
     transition: transform .5s;
     box-shadow: 5px 5px 10px black;
@@ -225,6 +225,28 @@ footer .social img {
     width: 80px;
     padding-top: 10px;
 }
+
+/* Equipment Styling */
+
+.equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.equipment-title {
+    grid-column: 1/6;
+    width: 100%;
+    color: #285d7b;
+}
+
+.equipment-grid p {
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+
+
+/* Don't touch below here. */
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
