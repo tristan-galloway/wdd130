@@ -242,6 +242,7 @@ footer .social img {
     grid-row: 1/2;
     width: 100%;
     background-color: #285d7b;
+    margin: 0 40px 40px 0;
 }
 
 .equipment-title h1 {
