@@ -9,26 +9,29 @@ body {
 }
 
 nav {
-    display: flex
+    display: flex;
+    background-color: Brown
 }
 /* target "id" with "#". Target "class" with "." */
 #primary {
     margin: 0 auto;
 }
 
+.home {
+    display: grid;
+}
+
 a {
-    background-color: lightblue;
     /* color refers to the text color */
-    color: brown;
+    color: white;
     text-decoration: none;
     padding: 10px;
     margin: 5px auto;
-    display: block;
 }
 
 a.hover {
     background-color: darkgrey;
-    color: white;
+    color: black;
 }
 
 h1 {
@@ -38,19 +41,24 @@ h1 {
     text-align: center;
 }
 
+.body {
+    align-content: center;
+}
 
 img {
-    width: 90%;
+    max-width: 500px;
+    width: 50%;
     box-sizing: border-box;
     margin: 5px auto;
     width: 0 auto;
+    display: block;
 }
 
 p {
+    max-width: 700px;
     width: 70%;
     box-sizing: border-box;
     margin: 20px;
-    text-align: center; 
 }
 
 .background {
