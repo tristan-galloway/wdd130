@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Titillium+Web&display=swap');
+
+/* Color and font variables */
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #195F76;
+    --secondary-color: #abdced;
+    --accent1-color: #f8b4bd;
+    --accent2-color: #EBEBEB;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: 'Chakra Petch', sans-serif;
+    --paragraph-font: 'Titillium Web', sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #195F76;  /* headlines on a white background */ 
+    --headline-color-on-color: #EBEBEB; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #195F76; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #EBEBEB; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #195F76  ;
+    --nav-link-color: #195F76;
+    --nav-background-color: #abdced;
+    --nav-hover-link-color: #EBEBEB;
+}
+
+body {
+    background-color: var(--accent2-color);
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    padding: 5px 15px;
+}
+
+main {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+section h2 {
+    background-color: var(--accent1-color);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+}
+
+p {
+    font-size: .8em;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 110px repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    margin: auto; 
+    margin-bottom: 50px;
+    background-color: var(--nav-background-color);
+    color: var(--headline-color-on-white);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+nav a {
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--heading-font);
+    font-size: 1.2em;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    padding: 5px;
+    border-radius: 25px;
+    width: 70%;
+}
+
+.page_link {
+    display: block;
+    align-self: center;
+}
+
+.page_link:hover {
+    color: black;
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+#banner_img{
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+#parts {
+    display: grid;
+    grid-template: 110px auto / 70% 30%;
+}
+
+#parts h2 {
+    grid-column: span 2;
+}
+
+#parts p, #parts img{
+    grid-row: 2/3;
+}
+
+#parts img {
+    margin: auto;
+    display: block;
+    padding: 20px;
+}
+
+footer {
+    background-color: var(--nav-background-color);
+    color: var(--headline-color-on-white);
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+
+footer h2 {
+    font-size: 1.2em;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: black;
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+.icon {
+    display: block;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#social_images {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
