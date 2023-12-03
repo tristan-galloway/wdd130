@@ -8,36 +8,55 @@
 </head>
 <body>
     <header>
-        <nav id="primary">
+        <nav id="navbar">
             <a href="wwr/index.html">White Water Rafting Website</a>
             <a href="wwr/site-plan-rafting.html">White Water Rafting Siteplan</a>
             <a href="positioning/positioning.html">Positioning Activity</a>
-            <a href="masterspcbuilding/index.html">Personal Website</a>
-            <a href="masterspcbuilding/site-plan.html">Personal Siteplan</a>
+            <a href="masterspcbuilding/index.html">Masters PC Building</a>
+            <a href="masterspcbuilding/site-plan.html">MPCB Siteplan</a>
         </nav> 
     </header>
     <main class="home">
         <section class="title">
             <h1>Tristan Galloway</h1>
-        </section>
-        <section class="body">
             <img src="random_images/Profile Photo.jpg" alt="Image of me">
-            <p class="background">
-                I am a Software Engineer major. I'm not really too sure what my emphasis will be quite yet but learning to code has been all kinds of fun so far. 
+        </section>
+        <section class="content">
+            <p>
+                I am a Software Engineer major. I'm working my way into backend development of software. I also enjoy doing data manipulation and experimenting with math.
             </p>
             <p>
-                I grew up in the Seattle Washington area in a city called Kent.
-            </p>
-            <p class="background">
-                I really enjoy any kind of water sport, in Highschool I was on the swim team and played water polo. 
+                I grew up in the Seattle Washington area in a city called Kent. Then right after I turned 16 my family moved to Rexburg Idaho. I finished highschool at Madison Highschool.
             </p>
             <p>
-                Another paragraph
+                I really enjoy any kind of water sport, in Highschool I was on the swim team and played water polo. Middle school I played football (Running back and Linebacker), wrestling (138 weight class), and track (high hurdles and high jump).
+            </p>
+            <p>
+                (Chat GPT Paragraph) Software engineering is a dynamic and ever-evolving discipline that encompasses the systematic design, development, testing, and maintenance of software systems. It combines principles from computer science, mathematics, and engineering to create efficient and reliable solutions to complex problems. Software engineers leverage their expertise in programming languages, algorithms, and data structures to craft applications that meet specific user needs or business requirements. The software engineering process involves various stages, including requirements analysis, system design, coding, testing, and deployment. Collaboration and communication are crucial aspects of software engineering, as teams work together to produce high-quality software within specified timeframes. Continuous learning and adaptation to emerging technologies are integral to the field, ensuring that software engineers stay abreast of the latest advancements to create innovative and robust solutions in the ever-evolving landscape of technology.
             </p>
         </section>
     </main>
     <footer>
-
     </footer>
 </body>
 </html>
+
+<script>
+    // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>

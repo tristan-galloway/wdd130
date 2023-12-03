@@ -2,23 +2,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@400;700&family=Signika&display=swap');
 
 body {
-    background-color:papayawhip;
+    display: block;
+    background-color:rgb(245, 245, 245);
     font-family: Roboto, sans-serif;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
-nav {
+/* Style the navbar */
+#navbar {
     display: flex;
-    background-color: Brown
+    overflow: hidden;
+    background-color: rgb(105, 92, 92);
 }
+  
+/* Navbar links */
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+  
+/* Page content */
+.content {
+    padding: 16px;
+}
+  
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 20px;
+}
+
 /* target "id" with "#". Target "class" with "." */
 #primary {
     margin: 0 auto;
 }
 
 .home {
-    display: grid;
+    padding-top: 50px;
 }
 
 a {
@@ -41,8 +73,10 @@ h1 {
     text-align: center;
 }
 
-.body {
+.content {
     align-content: center;
+    margin-top: 40px;
+    background-color: rgb(105, 92, 92);
 }
 
 img {
@@ -59,8 +93,7 @@ p {
     width: 70%;
     box-sizing: border-box;
     margin: 20px;
-}
-
-.background {
-    background-color: rgb(176, 129, 129);
+    color: white;
+    margin: 0 auto;
+    text-align: left;
 }
