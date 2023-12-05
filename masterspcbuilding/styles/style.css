@@ -29,6 +29,8 @@ body {
     font-family: var(--paragraph-font);
     font-size: 22px;
     padding: 5px 15px;
+    max-width: 1500px;
+    margin: auto;
 }
 
 main {
@@ -37,12 +39,11 @@ main {
     margin: 0 auto;
 }
 
-section h2 {
+h2 {
     background-color: var(--accent1-color);
     padding: 5px;
     border-radius: 10px;
 }
-
 
 h1, h2, h3, h4 {
     font-family: var(--heading-font);
@@ -131,6 +132,10 @@ footer h2 {
     font-size: 1.2em;
 }
 
+footer h3 {
+    padding-left: 10px;
+}
+
 footer a {
     text-decoration: none;
 }
@@ -156,4 +161,93 @@ footer a:hover{
 
 a, a:visited, a:hover, a:active {
     color: inherit;
-  }
+}
+
+
+/* Part Selection Specific Design */
+
+#details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 110px 1fr;
+}
+
+#details p {
+    grid-row: 1/4
+}
+
+#amd {
+    grid-column-start: 2;
+    grid-row: 1/2;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px;
+}
+
+#vs {
+    grid-column-start: 2;
+    grid-row: 2/3;
+    margin: auto;
+}
+
+#intel {
+    grid-column-start: 2;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px;
+}
+
+#prices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 110px 1fr;
+    grid-gap: 0 20px;
+}
+
+#gaming {
+    grid-column: 1/2;
+    grid-row: 1;
+}
+
+#gaming_li {
+    grid-row-start: 2;
+    grid-column: 1;
+}
+
+#video {
+    grid-column: 2/3;
+}
+
+#video_li {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+#work {
+    grid-column: 3/4;
+}
+
+#work_li {
+    grid-row-start: 2;
+    grid-column-start: 3;
+}
+
+li {
+    font-size: .9em;
+}
+
+#shopping {
+    background-color: var(--accent1-color);
+    padding-left: 10px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    max-width: 600px;
+    white-space: nowrap;
+}
+
+.badge:hover {
+    transition: .5s;
+    transform: scale(1.1);
+}

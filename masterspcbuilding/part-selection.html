@@ -12,66 +12,69 @@
             <a id="logo_link" href="index.html"> 
                 <img class="logo" src="images/master-logo-small.png" alt="Masters PC Building Logo"> 
             </a>
-            <nav id="primary">
-                <a href="index.html">Home</a>
-                <a href="part-selection.html">Part Selection</a>
-                <a href="instructions.html">Instructions</a>
-            </nav> 
+            <a class="page_link" href="index.html">Home</a>
+            <a class="page_link" href="part-selection.html">Part Selection</a>
+            <a class="page_link" href="instructions.html">Instructions</a>
         </nav>
     </header>
     <Main>
-        <head>
+        <div>
             <h1>How to Select Parts</h1>
-        </head>
-        <section>
-            <h2>Budget Allocation and Brand</h2>
-            <p>Paragraph</p>
-            <img src="images/amd_cpu.jpg" alt="AMD Ryzen CPU">
-            <img src="images/intel_cpu.jpg" alt="Intel CPU">
+            <h2 id="brand">Budget Allocation and Brand</h2>
+        </div>
+        <section id="details">
+            <p>When budgeting for a PC, it's essential to strike a balance between performance and cost. Begin by identifying your computing needs, whether it's gaming, content creation, or general productivity, as this will guide your component choices. Allocate a reasonable budget for each major component, including the processor, graphics card, RAM, storage, motherboard, and power supply. Consider reputable brands known for reliability and performance within your budget range. It's crucial to research and understand the differences between part brands. Some brands may offer better performance but come at a higher cost, while others provide a more budget-friendly option with slightly lower specifications. Read reviews, user feedback, and expert opinions to make informed decisions. Keep in mind that certain components, such as graphics cards and processors, may have more significant impacts on performance, so it might be worthwhile to allocate a larger portion of your budget to these critical elements. Regularly check for promotions, discounts, and new releases to optimize your build for both performance and value. When deciding how to alocate your budget, follow the percentage of budget per part guidelines below.
+            </p>
+            <img id="amd" src="images/amd_cpu.jpg" alt="AMD Ryzen CPU">
+            <h3 id="vs">VS.</h3>
+            <img id="intel" src="images/intel_cpu.jpg" alt="Intel CPU">
         </section>
-        <section>
-            <h3>Gaming</h3>
-                <li>CPU - %</li>
-                <li>Graphics Card - %</li>
-                <li>Memory - %</li>
-                <li>Motherboard - %</li>
-                <li>Storage - %</li>
-                <li>Power Supply - %</li>
-                <li>Case - %</li>
-            <h3>Video/Photo/Rendering</h3> 
-                <li>CPU - %</li>
-                <li>Graphics Card - %</li>
-                <li>Memory - %</li>
-                <li>Motherboard - %</li>
-                <li>Storage - %</li>
-                <li>Power Supply - %</li>
-                <li>Case - %</li>
-            <h3>Work</h3>
-                <li>CPU - %</li>
-                <li>Graphics Card - %</li>
-                <li>Memory - %</li>
-                <li>Motherboard - %</li>
-                <li>Storage - %</li>
-                <li>Power Supply - %</li>
-                <li>Case - %</li>
+        <section id="prices">
+            <h2 id="gaming">Gaming</h2>
+            <ol id="gaming_li">
+                <li>CPU - 20%</li>
+                <li>Graphics Card - 40%</li>
+                <li>Memory - 5%</li>
+                <li>Motherboard - 15%</li>
+                <li>Storage - 10%</li>
+                <li>Power Supply - 10%</li>
+            </ol>   
+            <h2 id="video">Videography</h2>
+            <ol id="video_li">
+                <li>CPU - 25%</li>
+                <li>Graphics Card - 20%</li>
+                <li>Memory - 20%</li>
+                <li>Motherboard - 10%</li>
+                <li>Storage - 20%</li>
+                <li>Power Supply - 5%</li>
+            </ol>
+            <h2 id="work">Work</h2>
+            <ol id="work_li">
+                <li>CPU - 20%</li>
+                <li>Graphics Card - 10%</li>
+                <li>Memory - 20%</li>
+                <li>Motherboard - 10%</li>
+                <li>Storage - 20%</li>
+                <li>Power Supply - 5%</li>     
+            </ol>
         </section>
-        <section>
-            <h2>Shop for Parts</h2>
-            <a href="https://www.newegg.com/" target="_blank">
-                <img class="logo" src="images/Newegg_logo.jpg" alt="Newegg">
+        <section id="shopping">
+            <h3>Shop for Parts: </h3>
+            <a class="badge" href="https://www.newegg.com/" target="_blank">
+                <img class="logo" src="images/Newegg_logo.png" alt="Newegg">
             </a>
-            <a href="https://pcpartpicker.com/" target="_blank">
+            <a class="badge" href="https://pcpartpicker.com/" target="_blank">
                 <img class="logo" src="images/pcpartpicker_favicon.png" alt="PC Part Picker">
             </a>
         </section>
     </Main>
     <footer>
-        <h2>Master PC Building &copy; 2023 - Tristan Galloway</h2>
+        <h3>Master PC Building &copy; 2023 - Tristan Galloway</h3>
         <a href="site-plan.html">
-            <h2>Site Plan</h2>
+            <h3>Site Plan</h3>
         </a>
-        <h2>Contact Us</h2>
-        <div>
+        <h3>Contact Us</h3>
+        <div id="social_images">
             <a href="https://facebook.com" target="_blank">
                 <img class="icon" src="images/facebook.png" alt="facebook icon">
             </a>
@@ -85,6 +88,6 @@
                 <img class="icon" src="images/LinkedIn_logo_initials.png" alt="instagram icon">
             </a>
         </div>
-    </footer>    
+    </footer>          
 </body>
 </html>
