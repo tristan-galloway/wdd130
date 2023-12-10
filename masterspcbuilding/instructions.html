@@ -10,45 +10,49 @@
     <header>
         <nav>
             <a id="logo_link" href="index.html"> 
-                <img src="images/master-logo-small.png" alt="Masters PC Building Logo"> 
+                <img class="logo" src="images/master-logo-small.png" alt="Masters PC Building Logo"> 
             </a>
-            <nav id="primary">
-                <a href="index.html">Home</a>
-                <a href="part-selection.html">Part Selection</a>
-                <a href="instructions.html">Instructions</a>
-            </nav> 
+            <a class="page_link" href="index.html">Home</a>
+            <a class="page_link" href="part-selection.html">Part Selection</a>
+            <a class="page_link" href="instructions.html">Instructions</a>
         </nav>
     </header>
-    <Main>
-        <head>
-            <h1>Title</h1>
-        </head>
-        <section>
-            <p>Paragraph</p>
+    <Main id="instruction_page">
+        <div>
+            <h1>Building Instructions</h1>
+        </div>
+        <section id="instruction_info">
+            <p>Whether you're a seasoned tech enthusiast or a curious beginner, our goal is to empower you with the knowledge and skills 
+            needed to assemble a custom computer tailored to your needs. Below, you'll find two essential video tutorials to guide you 
+            through the entire process seamlessly. The first video meticulously walks you through the hardware assembly, from connecting 
+            the motherboard to installing the graphics card. Once your hardware is in place, the second video takes you on a step-by-step 
+            journey into the software realm, demonstrating how to set up your operating system and optimize your new PC for peak performance.
+            Get ready to embark on a rewarding journey of building and customizing your own computer system with our easy-to-follow video guides. 
+            Let's dive in!</p>
             <img src="images/cpu_motherboard.jpg" alt="CPU being placed in Motherboard">
         </section>
         <section id="linus">
-            <h2>Hardware Set Up</h2>
-            <a href="https://www.youtube.com/@LinusTechTips" target="_blank">
+            <h2>Hardware Setup</h2>
+            <iframe width="702" height="351" src="https://www.youtube.com/embed/v7MYOpFONCU" title="First Person View PC BUILD Guide! (POV)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <a class="badge" href="https://www.youtube.com/@LinusTechTips" target="_blank">
                 <img class="logo" src="images/linus_tech_tips_logo.png" alt="Linus Tech Tips">
             </a>
-            <iframe width="702" height="351" src="https://www.youtube.com/embed/v7MYOpFONCU" title="First Person View PC BUILD Guide! (POV)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </section>
-        <section id="Jayz">
+        <section id="jayz">
             <h2>Software Installation</h2>
-            <a href="https://www.youtube.com/@Jayztwocents" target="_blank">
+            <a class="badge" href="https://www.youtube.com/@Jayztwocents" target="_blank">
                 <img class="logo" src="images/jayz2cnents_logo.jpg" alt="Jayz Two Cents">
             </a>
             <iframe width="703" height="395" src="https://www.youtube.com/embed/xhHtHMQygzE" title="What to do AFTER you build your PC... Updated for 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </section>
     </Main>
     <footer>
-        <h2>Master PC Building &copy; 2023 - Tristan Galloway</h2>
+        <h3>Master PC Building &copy; 2023 - Tristan Galloway</h3>
         <a href="site-plan.html">
-            <h2>Site Plan</h2>
+            <h3>Site Plan</h3>
         </a>
-        <h2>Contact Us</h2>
-        <div>
+        <h3>Contact Us</h3>
+        <div id="social_images">
             <a href="https://facebook.com" target="_blank">
                 <img class="icon" src="images/facebook.png" alt="facebook icon">
             </a>
@@ -62,6 +66,6 @@
                 <img class="icon" src="images/LinkedIn_logo_initials.png" alt="instagram icon">
             </a>
         </div>
-    </footer>    
+    </footer>   
 </body>
 </html>
