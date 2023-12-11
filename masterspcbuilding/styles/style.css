@@ -293,6 +293,7 @@ li {
     margin: auto;
     border-radius: 10px;
     box-shadow: 0 2px 5px;
+    border-width: 0px;
 }
 
 #jayz {
@@ -316,4 +317,5 @@ li {
     display: block;
     border-radius: 10px;
     box-shadow: 0 2px 5px;
+    border-width: 0px;
 }
